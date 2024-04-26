@@ -18,7 +18,11 @@ export default function InterceptedImagePage({ params }) {
       <div className="modal-backdrop" onClick={router.back} />
       <dialog className="modal" open>
         <div className="fullscreen-image">
-          <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
+          <img
+            className="modal-image"
+            src={`/images/news/${newsItem.image}`}
+            alt={newsItem.title}
+          />
         </div>
       </dialog>
     </>
